@@ -1,83 +1,136 @@
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
-    line-height: 1.6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
     background: #f9f9f9;
     color: #222;
 }
 
+/* Header & Navigation */
 header {
     background: #7a0c0c;
     color: white;
-    padding: 15px 0;
 }
 
 nav {
-    width: 90%;
+    max-width: 1100px;
     margin: auto;
+    padding: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 nav h1 {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 14px;
+    padding: 4px 6px;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main Container */
 .container {
-    width: 90%;
-    margin: 40px auto;
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 15px;
 }
 
-h2 {
-    color: #7a0c0c;
-    margin-bottom: 15px;
-}
-
+/* Sections */
 section {
     margin-bottom: 40px;
 }
 
+h2 {
+    color: #7a0c0c;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #7a0c0c;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #5a0808;
+}
+
+/* Footer */
 footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 50px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-.btn {
-    display: inline-block;
-    background: #7a0c0c;
-    color: white;
-    padding: 8px 15px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 4px;
-}
+/* ------------------------- */
+/* Mobile Responsive Tweaks */
+/* ------------------------- */
+@media (max-width: 768px) {
 
-.btn:hover {
-    background: #5a0808;
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
 }
