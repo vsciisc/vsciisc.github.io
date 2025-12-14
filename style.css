@@ -153,3 +153,47 @@ footer {
         font-size: 16px;
     }
 }
+
+/* -------------------- */
+/* Events Section */
+/* -------------------- */
+.event-card {
+    background: #ffffff;
+    border-left: 4px solid #7a0c0c;
+    padding: 18px 20px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+}
+
+.event-card h3 {
+    font-size: 18px;
+    color: #7a0c0c;
+    margin-bottom: 6px;
+}
+
+.event-date {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.event-bio {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.event-notes {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-link a {
+    color: #7a0c0c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.event-link a:hover {
+    text-decoration: underline;
+}
