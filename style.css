@@ -10,60 +10,59 @@
 /* -------------------- */
 /* Vivekananda Quotes */
 /* -------------------- */
+/* -------------------- */
+/* Vivekananda Hero Section */
+/* -------------------- */
 .quote-section {
     display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
 }
 
+/* Big prominent image */
+.vivek-image {
+    height: 50vh;          /* HALF screen height */
+    width: auto;
+    max-width: 95vw;
+    object-fit: contain;
+    margin-bottom: 35px;
+    border-radius: 14px;
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* Quote container */
 .quote-box {
     text-align: center;
-    max-width: 900px;
-}
-
-
-
-.vivek-image {
-    max-height: 50vh;      /* Half of viewport height */
-    width: auto;
-    max-width: 90%;
-    height: auto;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    object-fit: contain;
-}
-
-#quote-text,
-.vivek-image {
-    transition: opacity 0.6s ease-in-out;
+    max-width: 800px;
 }
 
 /* Quote text */
 #quote-text {
-    font-size: 20px;
+    font-size: 22px;
     font-style: italic;
     line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto 10px;
+    margin-bottom: 10px;
+    transition: opacity 0.6s ease-in-out;
 }
 
 /* Author */
 .quote-author {
     font-size: 16px;
     font-weight: 600;
-    margin-top: 5px;
 }
 
-/* Mobile */
+/* Mobile refinement */
 @media (max-width: 768px) {
     .vivek-image {
-        max-height: 40vh;
+        height: 40vh;
     }
 
     #quote-text {
         font-size: 18px;
     }
 }
+
 
 
 
