@@ -7,6 +7,8 @@
 </head>
 
 <script>
+document.addEventListener("DOMContentLoaded", () => {
+
     const quotes = [
         "Arise, awake, and stop not till the goal is reached.",
         "All power is within you; you can do anything and everything.",
@@ -26,8 +28,11 @@
     setInterval(() => {
         index = (index + 1) % quotes.length;
         quoteElement.textContent = `“${quotes[index]}”`;
-    }, 5500); // 5.5 seconds
+    }, 5500);
+
+});
 </script>
+
 
     
 <body>
@@ -55,17 +60,22 @@
 
 <div class="container">
 
-    <section class="quote-section">
+<section class="quote-section">
     <div class="quote-box">
-        <img src="vivekananda.jpg" alt="Swami Vivekananda" class="quote-image">
+
+        <img src="images_vivek/vivek1.jpg"
+             alt="Swami Vivekananda"
+             class="vivek-image">
 
         <p id="quote-text">
             “Arise, awake, and stop not till the goal is reached.”
         </p>
 
         <p class="quote-author">— Swami Vivekananda</p>
+
     </div>
 </section>
+
 
     
     <section>
