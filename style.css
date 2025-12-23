@@ -11,25 +11,26 @@
 /* Vivekananda Quotes */
 /* -------------------- */
 .quote-section {
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
 }
 
 .quote-box {
-    background: #fff;
-    border-left: 4px solid #7a0c0c;
-    padding: 20px;
     text-align: center;
-    border-radius: 4px;
+    max-width: 900px;
 }
 
 
 
 .vivek-image {
-    width: 260px;           /* Prominent size */
-    max-width: 80%;
+    max-height: 50vh;      /* Half of viewport height */
+    width: auto;
+    max-width: 90%;
     height: auto;
-    margin-bottom: 25px;
-    border-radius: 8px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    object-fit: contain;
 }
 
 #quote-text,
@@ -56,13 +57,14 @@
 /* Mobile */
 @media (max-width: 768px) {
     .vivek-image {
-        width: 200px;
+        max-height: 40vh;
     }
 
     #quote-text {
         font-size: 18px;
     }
 }
+
 
 
 
