@@ -58,9 +58,9 @@
 }
 
 /* Mobile refinement */
-@media (max-width: 768px) {
+@media (max-width: 7568px) {
     .vivek-image {
-        height: 40vh;
+        height: 30vh;
     }
 
     #quote-text {
