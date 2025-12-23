@@ -22,11 +22,7 @@
     border-radius: 4px;
 }
 
-.quote-image {
-    max-width: 120px;
-    height: auto;
-    margin-bottom: 15px;
-}
+
 
 .vivek-image {
     width: 260px;           /* Prominent size */
@@ -34,6 +30,11 @@
     height: auto;
     margin-bottom: 25px;
     border-radius: 8px;
+}
+
+#quote-text,
+.vivek-image {
+    transition: opacity 0.6s ease-in-out;
 }
 
 /* Quote text */
