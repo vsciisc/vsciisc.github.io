@@ -60,6 +60,39 @@ nav ul li a:hover {
 }
 
 /* -------------------- */
+/* Logo Styling */
+/* -------------------- */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 42px;          /* Desktop size */
+    width: auto;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .logo {
+        height: 36px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+}
+
+
+/* -------------------- */
 /* Main Content */
 /* -------------------- */
 .container {
