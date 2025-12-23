@@ -71,8 +71,9 @@ nav ul li a:hover {
 }
 
 .logo {
-    height: 42px;          /* Desktop size */
+    height: 46px;          /* Desktop size */
     width: auto;
+    max-height: 46px;
 }
 
 .logo-text {
