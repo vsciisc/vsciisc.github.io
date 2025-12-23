@@ -152,16 +152,21 @@ nav ul li a:hover {
 }
 
 /* Mobile adjustment */
-@media (max-width: 768px) {
-    .logo {
-        height: 36px;
+@media (max-width: 568px) {
+    .vivek-image {
+        height: 30vh;       /* Controlled height */
+        max-width: 92vw;    /* NEVER exceed screen width */
+        width: auto;
     }
 
-    .logo-text {
-        font-size: 20px;
+    #quote-text {
+        font-size: 17px;
+    }
+
+    .quote-author {
+        font-size: 15px;
     }
 }
-
 
 /* -------------------- */
 /* Main Content */
