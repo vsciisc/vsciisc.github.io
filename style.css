@@ -15,26 +15,31 @@
 /* -------------------- */
 .quote-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   /* FORCE vertical stacking */
     align-items: center;
+    justify-content: center;
     padding: 50px 20px;
+    width: 100%;
 }
+
 
 /* Big prominent image */
 .vivek-image {
-    height: 50vh;          /* HALF screen height */
+    display: block;           /* Prevent inline behavior */
+    height: 50vh;
     width: auto;
     max-width: 95vw;
+    margin: 0 auto 35px;
     object-fit: contain;
-    margin-bottom: 35px;
     border-radius: 14px;
-    transition: opacity 0.6s ease-in-out;
 }
+
 
 /* Quote container */
 .quote-box {
-    text-align: center;
+    width: 100%;
     max-width: 800px;
+    text-align: center;
 }
 
 /* Quote text */
@@ -64,6 +69,11 @@
 }
 
 
+.vivek-image,
+.quote-box {
+    float: none;
+    clear: both;
+}
 
 
 
