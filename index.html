@@ -5,6 +5,31 @@
     <title>Vivekananda Study Circle | IISc</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+    const quotes = [
+        "Arise, awake, and stop not till the goal is reached.",
+        "All power is within you; you can do anything and everything.",
+        "Strength is life, weakness is death.",
+        "Take up one idea. Make that one idea your life.",
+        "The greatest religion is to be true to your own nature.",
+        "You have to grow from the inside out.",
+        "Purity, patience, and perseverance overcome all obstacles.",
+        "Truth can be stated in a thousand different ways.",
+        "Serve man as God.",
+        "We are what our thoughts have made us."
+    ];
+
+    let index = 0;
+    const quoteElement = document.getElementById("quote-text");
+
+    setInterval(() => {
+        index = (index + 1) % quotes.length;
+        quoteElement.textContent = `“${quotes[index]}”`;
+    }, 5500); // 5.5 seconds
+</script>
+
+    
 <body>
 
 <header>
