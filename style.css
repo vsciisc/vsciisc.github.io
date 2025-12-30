@@ -22,9 +22,11 @@ html, body {
     flex-direction: column;   /* FORCE vertical stacking */
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 12px 20px 40px;
     width: 100%;
+     padding-top: 10px;
 }
+
 
 
 /* -------------------- */
@@ -45,6 +47,7 @@ html, body {
     display: block;
     border-radius: 8px;
 }
+
 
 
 
