@@ -6,56 +6,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<section class="hero">
+    <img id="vivek-image" src="images_vivek/vivekananda.jpg" alt="Swami Vivekananda">
+</section>
+
+    
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-    const slides = [
-        {
-            quote: "Arise, awake, and stop not till the goal is reached.",
-            image: "images_vivek/vivek1.webp"
-        },
-        {
-            quote: "All power is within you; you can do anything and everything.",
-            image: "images_vivek/vivek2.webp"
-        },
-        {
-            quote: "Strength is life, weakness is death.",
-            image: "images_vivek/vivek3.webp"
-        },
-        {
-            quote: "Take up one idea. Make that one idea your life.",
-            image: "images_vivek/vivek4.webp"
-        },
-        {
-            quote: "The greatest religion is to be true to your own nature.",
-            image: "images_vivek/vivek5.webp"
-        }
+    const quotes = [
+        "Arise, awake, and stop not till the goal is reached.",
+        "All power is within you; you can do anything and everything.",
+        "Strength is life, weakness is death.",
+        "Take up one idea. Make that one idea your life.",
+        "The greatest religion is to be true to your own nature."
     ];
 
     let index = 0;
-
     const quoteElement = document.getElementById("quote-text");
-    const imageElement = document.getElementById("vivek-image");
 
     setInterval(() => {
-        index = (index + 1) % slides.length;
+        index = (index + 1) % quotes.length;
 
         // fade out
         quoteElement.style.opacity = 0;
-        imageElement.style.opacity = 0;
 
         setTimeout(() => {
-            quoteElement.textContent = `“${slides[index].quote}”`;
-            imageElement.src = slides[index].image;
-
+            quoteElement.textContent = `“${quotes[index]}”`;
             // fade in
             quoteElement.style.opacity = 1;
-            imageElement.style.opacity = 1;
         }, 600);
 
     }, 5500); // 5.5 seconds
 });
 </script>
+
 
 
 
