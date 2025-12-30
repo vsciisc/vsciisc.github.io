@@ -38,13 +38,12 @@ html, body {
 }
 
 .hero img {
-    width: 260px;           /* Prominent size */
-    border-radius: 8px;
-    max-width: 80%;;   /* smaller image */
-    width: 60%;
+    max-width: 220px;
+    width: 100%;
     height: auto;
-    margin: 10px auto;  /* tight spacing */
+    margin: 10px auto;
     display: block;
+    border-radius: 8px;
 }
 
 
@@ -75,17 +74,12 @@ html, body {
     .quote-section {
         padding: 35px 14px;
     }
-}
-@media (max-width: 768px) {
-    .hero img {
+    #vivek-image {
         max-width: 150px;
-    }
-
-    #quote-text {
-        font-size: 16px;
-        padding: 0 12px;
+        height: auto;
     }
 }
+
 
 
 
