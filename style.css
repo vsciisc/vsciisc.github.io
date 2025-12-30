@@ -218,6 +218,115 @@ ul li {
     margin-bottom: 10px;
 }
 
+
+/* ------------------------------
+   Hero Section
+--------------------------------*/
+.hero-section {
+    text-align: center;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 60px;
+}
+
+.hero-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 25px auto;
+    max-width: 700px;
+    color: #444;
+}
+
+.hero-quote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #7a0c0c;
+}
+
+/* ------------------------------
+   Highlight / Objective Section
+--------------------------------*/
+.highlight-section {
+    background: #fff;
+    padding: 40px 30px;
+    border-left: 4px solid #7a0c0c;
+    border-radius: 6px;
+    margin: 60px 0;
+}
+
+.objective-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.objective-list li {
+    padding-left: 28px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.objective-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #7a0c0c;
+    font-size: 1.4rem;
+    top: -2px;
+}
+
+/* ------------------------------
+   Questions Section
+--------------------------------*/
+.questions-section ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.questions-section li {
+    margin-bottom: 8px;
+}
+
+
+
+/* ------------------------------
+   Quote Section
+--------------------------------*/
+
+
+.final-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin: auto;
+    color: #333;
+}
+
+.final-quote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #7a0c0c;
+}
+
+/* ------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 768px) {
+    .hero-section,
+    .highlight-section,
+    .join-section,
+    .contact-highlight {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
 /* -------------------- */
 /* Buttons */
 /* -------------------- */
