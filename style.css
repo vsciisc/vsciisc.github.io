@@ -4,9 +4,6 @@ html, body {
 }
 
 
-/* -------------------- */
-/* Reset & Base Styles */
-/* -------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +32,7 @@ html, body {
 
 .hero {
     text-align: center;
-    margin: 2px 0;      /* reduced vertical space */
+    margin: 2px 0;     
     padding: 0;
 }
 
