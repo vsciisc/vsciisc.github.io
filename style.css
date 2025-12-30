@@ -323,3 +323,64 @@ footer {
 .event-link a:hover {
     text-decoration: underline;
 }
+
+
+
+/* -------------------- */
+/* Alumni Section */
+/* -------------------- */
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.alumni-card {
+    background: #ffffff;
+    border-left: 4px solid #7a0c0c;
+    padding: 16px 18px;
+    border-radius: 4px;
+}
+
+.alumni-card h3 {
+    font-size: 18px;
+    color: #7a0c0c;
+    margin-bottom: 6px;
+}
+
+.alumni-role {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.alumni-meta {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.alumni-duration {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.alumni-links a {
+    font-size: 14px;
+    color: #7a0c0c;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.alumni-links a:hover {
+    text-decoration: underline;
+}
+
+.alumni-note {
+    font-size: 14px;
+    color: #333;
+    margin-top: 6px;
+}
