@@ -29,15 +29,21 @@ html, body {
 }
 
 
-/* Big prominent image */
-.vivek-image {
-    display: block;           /* Prevent inline behavior */
-    height: 50vh;
-    width: auto;
-    max-width: 95vw;
-    margin: 0 auto 35px;
-    object-fit: contain;
-    border-radius: 14px;
+/* -------------------- */
+/* Hero Section */
+/* -------------------- */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero img {
+    max-width: 280px;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    opacity: 1;
 }
 
 
