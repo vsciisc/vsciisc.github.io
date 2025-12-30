@@ -30,14 +30,17 @@ html, body {
 /* -------------------- */
 /* Hero Section */
 /* -------------------- */
+
 .hero {
     text-align: center;
-    margin: 20px 0;      /* reduced vertical space */
+    margin: 10px 0;      /* reduced vertical space */
     padding: 0;
 }
 
 .hero img {
-    max-width: 180px;   /* smaller image */
+    width: 260px;           /* Prominent size */
+    border-radius: 8px;
+    max-width: 80%;;   /* smaller image */
     width: 60%;
     height: auto;
     margin: 10px auto;  /* tight spacing */
