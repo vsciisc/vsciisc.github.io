@@ -33,7 +33,7 @@ html, body {
 
 .hero {
     text-align: center;
-    margin: 10px 0;      /* reduced vertical space */
+    margin: 2px 0;      /* reduced vertical space */
     padding: 0;
 }
 
@@ -41,7 +41,7 @@ html, body {
     max-width: 220px;
     width: 100%;
     height: auto;
-    margin: 10px auto;
+    margin: 2px auto;
     display: block;
     border-radius: 8px;
 }
