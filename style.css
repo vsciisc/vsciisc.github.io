@@ -830,12 +830,13 @@ footer {
     width: 100%;
 }
 
+/* UPDATED CODE BELOW */
 .event-poster {
-    max-width: 100%;    /* Ensures image shrinks on mobile phones */
+    width: 100%;        /* Allows it to shrink on small screens */
+    max-width: 450px;   /* THIS IS THE FIX: Stops it from getting wider than 450px */
     height: auto;       /* Maintains aspect ratio */
-    max-height: 800px;  /* Prevents it from being too tall on large monitors */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Adds a subtle shadow for depth */
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
 }
 
 .section-divider {
