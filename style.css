@@ -771,3 +771,8 @@ footer {
 .year-card[open] summary {
     color: #000; /* Darker when open */
 }
+
+.activity-gallery img {
+    object-fit: contain; /* Shows the whole image */
+    background-color: #f0f0f0; /* Fills the empty space with grey */
+}
