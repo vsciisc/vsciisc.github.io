@@ -776,3 +776,37 @@ footer {
     object-fit: contain; /* Shows the whole image */
     background-color: #f0f0f0; /* Fills the empty space with grey */
 }
+
+.mentor-profile {
+    display: flex;
+    gap: 30px; /* Space between photo and text */
+    align-items: flex-start; /* Aligns photo to the top */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows stacking on mobile screens */
+}
+
+.mentor-photo {
+    width: 250px; /* Standard profile width */
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Nice shadow effect */
+    object-fit: cover;
+}
+
+.mentor-bio {
+    flex: 1; /* Takes up the remaining space */
+    text-align: justify; /* Makes the text paragraphs look neat */
+    line-height: 1.6;
+}
+
+/* Optional: Make photo center on mobile */
+@media (max-width: 768px) {
+    .mentor-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mentor-photo {
+        width: 100%;
+        max-width: 300px;
+    }
+}
