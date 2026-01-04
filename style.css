@@ -755,3 +755,19 @@ footer {
     }
 }
 
+.year-card {
+    margin: 10px 0 10px 20px; /* Indent the years to the right */
+    border-left: 3px solid #ddd; /* Add a subtle line on the left */
+    padding-left: 10px;
+}
+
+.year-card summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #555; /* Slightly lighter text for the year */
+    padding: 5px;
+}
+
+.year-card[open] summary {
+    color: #000; /* Darker when open */
+}
