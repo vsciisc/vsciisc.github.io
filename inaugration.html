@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="inauguration">
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+
+  <div class="inaugurate-box">
+    <h1>VSC IISc</h1>
+    <button onclick="startInauguration()">Inaugurate</button>
+  </div>
+</div>
+
+<audio id="bell" src="bell.mp3"></audio>
+
+<script>
+let bellStarted = false;
+
+function playBellOnce() {
+  if (bellStarted) return;
+  const bell = document.getElementById("bell");
+  bell?.play().catch(() => {});
+  bellStarted = true;
+}
+
+document.addEventListener("click", playBellOnce, { once: true });
+
+function startInauguration() {
+  playBellOnce();
+
+  // Curtains animation
+  const overlay = document.getElementById("inauguration");
+  overlay.classList.add("open");
+
+  // Redirect AFTER animation finishes
+  setTimeout(() => {
+    window.location.href = "https://vsciisc.github.io/";
+  }, 2200); // match curtain animation duration
+}
+</script>
+
+</body>
+</html>
