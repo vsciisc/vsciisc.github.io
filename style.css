@@ -845,3 +845,83 @@ footer {
     background: #ccc;
     margin: 40px 0;
 }
+
+/*for the inaugration section*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#inauguration {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #111;
+}
+
+
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #7a0000,
+    #b00000,
+    #7a0000
+  );
+  transition: transform 2s ease-in-out;
+}
+
+.curtain.left {
+  left: 0;
+}
+
+.curtain.right {
+  right: 0;
+}
+
+/* Animate */
+.open .curtain.left {
+  transform: translateX(-100%);
+}
+
+.open .curtain.right {
+  transform: translateX(100%);
+}
+
+/* Center box */
+.inaugurate-box {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-family: serif;
+}
+
+.inaugurate-box h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.inaugurate-box button {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  cursor: pointer;
+  border: none;
+  background: gold;
+  color: #111;
+  border-radius: 6px;
+}
+
+
+canvas {
+  display: block;
+}
