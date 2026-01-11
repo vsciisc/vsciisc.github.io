@@ -777,13 +777,17 @@ footer {
     background-color: #f0f0f0; /* Fills the empty space with grey */
 }
 
-.logo-image{
-    display:flex;
+.logo-container {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center (optional) */
+}
+
+.logo-image {
     width: 200px;
     height: 200px;
-    justify-content: center;
-    align-items: center;
-    }
+}
+
 /* =========================================
    Styles for Mentor Profile (Center Aligned)
    ========================================= */
