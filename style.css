@@ -784,10 +784,9 @@ footer {
 }
 
 .logo-image {
-    display: block;
+     display: block;
     margin: 0 auto;
-    max-width: 200px;
-    width: 100%;
+    width: 170px;
     height: auto;
 }
 
