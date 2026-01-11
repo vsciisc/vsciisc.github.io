@@ -797,6 +797,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border: 3px solid #f0f0f0; /* Optional: Adds a nice border */
     display: block;
+     align-items: center;
 }
 
 .mentor-bio {
