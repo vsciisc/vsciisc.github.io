@@ -940,3 +940,29 @@ html, body {
 canvas {
   display: block;
 }
+
+
+/* =========================================
+   Styles for Video in About Section
+   ========================================= */
+
+.video-container {
+    margin: 30px auto; /* Adds space above/below and centers it */
+    max-width: 800px;  /* Prevents the video from becoming too huge on big screens */
+    width: 100%;       /* Ensures it fits smaller screens */
+    text-align: center;
+}
+
+.local-video {
+    width: 100%;       /* Makes the video responsive */
+    height: auto;
+    border-radius: 10px; /* Adds nice rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Adds a shadow */
+}
+
+/* If using YouTube iframe, this ensures it respects the container width */
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
