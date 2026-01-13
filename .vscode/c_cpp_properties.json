@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/sangeerth/tm_catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/autonomous_exploration/autoexpl_ros/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/doosan-robot/common/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/doosan-robot/dsr_control/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/gazebo_ros_pkgs/gazebo_ros/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/3WD_OMNI_ROBOT/hector_slam/hector_geotiff/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/3WD_OMNI_ROBOT/hector_slam/hector_map_tools/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/3WD_OMNI_ROBOT/hector_slam/hector_mapping/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/3WD_OMNI_ROBOT/hector_slam/hector_marker_drawing/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/mavros/libmavconn/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/mavros/mavros/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/mavros/mavros_msgs/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/omniBot/omnibot_control/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/serial/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/Python-implementaion-of-Astar-and-dijkstras-algorithm-on-turtlebot-in-ROS-/src/srv_client_plugin/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/mavros/test_mavros/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/tm/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/tm_1/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/tm_balancing_bot/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/tm_navigation/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/sangeerth/tm_catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
