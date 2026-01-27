@@ -78,6 +78,7 @@ Meeting minutes of last class:
     body += """
 Regards
 VSC Team
+Website: https://vsciisc.github.io/
 Contact:- Mohit (9472464127)
 """
     return body
