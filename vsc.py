@@ -65,9 +65,7 @@ Venue: Warden Room, 1st floor, A Block Hostel, above A Mess, IISc.
 
 Google Maps Link: https://maps.app.goo.gl/HMja5vR2ce4EQ85GA
 
-
-From today's class we will be starting a book "Call to the Youth of Nations". VSC, IISc is thinking to organize a quiz competition in the month of March on this book. The classes that we do from today will be helpful for preparation of the quiz. 
-We encourage the IISc community to attend the VSC classes in person.If you are unable to make it today, you may join the class online using this Google Meet link: 
+If you are unable to make it today in person, you may join the class online using this Google Meet link: 
 {GOOGLE_MEET_LINK}
 Today's lecture: {lecture_link}
 
