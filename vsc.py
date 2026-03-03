@@ -12,7 +12,7 @@ GOOGLE_MEET_LINK = "https://meet.google.com/zfw-ahfa-qyp"
 
 date = datetime.date.today() 
 DATE = date.strftime("%dth %B %Y")
-DATE_TIME = date.strftime("%dth %B %Y") + ", 6:30 - 8:30 PM."
+DATE_TIME = date.strftime("%dth %B %Y") + ", 6:30 - 7:30 PM."
 #DATE_TIME = "13th January 2025-Tuesday(today), 6:30 - 8:30 PM."
 
 
@@ -26,22 +26,26 @@ def extract_lecture_link(soup: BeautifulSoup) -> str:
     """
     Extracts the lecture PDF link dynamically.
     Assumes lecture links end with .pdf
-    """
-    pdf_links = soup.find_all("a", href=True)
-    for link in pdf_links:
-        href = link["href"]
-        if href.lower().endswith(".pdf"):
-            # Handle relative URLs
-            if href.startswith("http"):
-                return href
-            else:
-                return f"https://vsciisc.github.io/{href.lstrip('/')}"
-    raise ValueError("Lecture PDF link not found")
 
+
+    """
+
+    for tag in soup.find_all(["details"]):
+
+        
+        
+        text = str(tag)
+
+        match = re.search(r'href="([^"]+)"', text)
+        if match:
+            return(match.group(1))
+        
+      
+    
 
 def extract_meeting_minutes(soup: BeautifulSoup) -> list:
    
-    heading = None
+
     for tag in soup.find_all(["details"]):
 
         #print(tag)
@@ -65,8 +69,9 @@ Venue: Warden Room, 1st floor, A Block Hostel, above A Mess, IISc.
 
 Google Maps Link: https://maps.app.goo.gl/HMja5vR2ce4EQ85GA
 
-If you are unable to make it today in person, you may join the class online using this Google Meet link: 
+We encourage the IISc community to attend the VSC classes in person.If you are unable to make it today, you may join the class online using this Google Meet link: 
 {GOOGLE_MEET_LINK}
+
 Today's lecture: {lecture_link}
 
 Meeting minutes of last class:
@@ -77,7 +82,6 @@ Meeting minutes of last class:
     body += """
 Regards
 VSC Team
-Website: https://vsciisc.github.io/
 Contact:- Mohit (9472464127)
 """
     return body
