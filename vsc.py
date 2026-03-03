@@ -12,8 +12,8 @@ GOOGLE_MEET_LINK = "https://meet.google.com/zfw-ahfa-qyp"
 
 date = datetime.date.today() 
 DATE = date.strftime("%dth %B %Y")
-DATE_TIME = date.strftime("%dth %B %Y") + ", 6:30 - 7:30 PM."
-#DATE_TIME = "13th January 2025-Tuesday(today), 6:30 - 8:30 PM."
+# DATE_TIME = date.strftime("%dth %B %Y") + ", 6:30 - 7:30 PM."
+DATE_TIME = "13th January 2025-Tuesday(today), 6:30 - 8:30 PM."
 
 
 def fetch_page(url: str) -> BeautifulSoup:
