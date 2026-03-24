@@ -95,6 +95,12 @@ Regards
 VSC Team
 
 Contact: Mohit (9472464127)
+
+Whatsapp group: https://chat.whatsapp.com/Jxu9cruAu8m9MZvlpNc32s
+Google Group: https://groups.google.com/g/vsc-iisc
+Facebook Page:https://www.facebook.com/vsciisc
+YouTube Channel: https://www.youtube.com/@vivekanandastudycircleiisc2302
+VSC Website: https://vsciisc.github.io/
 """
 
     return body
