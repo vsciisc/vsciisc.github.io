@@ -26,22 +26,26 @@ def extract_lecture_link(soup: BeautifulSoup) -> str:
     """
     Extracts the lecture PDF link dynamically.
     Assumes lecture links end with .pdf
-    """
-    pdf_links = soup.find_all("a", href=True)
-    for link in pdf_links:
-        href = link["href"]
-        if href.lower().endswith(".pdf"):
-            # Handle relative URLs
-            if href.startswith("http"):
-                return href
-            else:
-                return f"https://vsciisc.github.io/{href.lstrip('/')}"
-    raise ValueError("Lecture PDF link not found")
 
+
+    """
+
+    for tag in soup.find_all(["details"]):
+
+        
+        
+        text = str(tag)
+
+        match = re.search(r'href="([^"]+)"', text)
+        if match:
+            return(match.group(1))
+        
+      
+    
 
 def extract_meeting_minutes(soup: BeautifulSoup) -> list:
    
-    heading = None
+
     for tag in soup.find_all(["details"]):
 
         #print(tag)
@@ -65,9 +69,9 @@ Venue: Warden Room, 1st floor, A Block Hostel, above A Mess, IISc.
 
 Google Maps Link: https://maps.app.goo.gl/HMja5vR2ce4EQ85GA
 
-
 We encourage the IISc community to attend the VSC classes in person.If you are unable to make it today, you may join the class online using this Google Meet link: 
 {GOOGLE_MEET_LINK}
+
 Today's lecture: {lecture_link}
 
 Meeting minutes of last class:
